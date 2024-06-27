@@ -76,11 +76,11 @@ section p {
 }
 
 #background001 {
-  background: url(/images/background001.jpg) right center no-repeat fixed;
+  background: url(./images/background001.jpg) right center no-repeat fixed;
 }
 
 #background002 {
-  background: url(/images/background002.jpg) left center no-repeat fixed;
+  background: url(./images/background002.jpg) left center no-repeat fixed;
 }
 
 footer {
