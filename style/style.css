@@ -1,98 +1,91 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --texts-apart-font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --h1-header-font-family: 'Passion One', cursive;
-    --cordel-font-family: 'Sriracha', cursive;
+  --texts-apart-font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --h1-header-font-family: "Passion One", cursive;
+  --section-font-family: "Sriracha", cursive;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
+  font-family: var(--texts-apart-font-family);
 }
 
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 50px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 header h1 {
-    font-family: var(--h1-header-font-family);
-    font-size: 10vw;
-}
-
-header > h1 > span {
-    font-size: 7vw;
+  padding-top: 50px;
+  font: small-caps 10vw var(--h1-header-font-family);
 }
 
 header blockquote {
-    font-family: var(--texts-apart-font-family);
+  padding-bottom: 50px;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
-header a:hover {
-    text-decoration: underline;
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
 }
 
-main section {
-    color: black;
-    font-family: var(--cordel-font-family);
-    font-size: 3.5vw;
-    line-height: 7vw;
-    padding: 60px 30px;
+section {
+  padding: 10vh 0 10vh 30px;
+  line-height: 2em;
+  font: 3.5vw var(--section-font-family);
 }
 
-.white-background {
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
-    position: relative;
+section p {
+  padding-bottom: 2em;
 }
 
-.white-background p {
-    margin-bottom: 35px;
+.normal-background {
+  background-color: white;
+  color: black;
+}
+
+.image-background {
+  background-color: gray;
+  color: white;
+  box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.5);
+  background-size: cover;
 }
 
 .image-background p {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-shadow: 1px 2px 0 black;
-    width: 50%;
-    padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 1px 2px 0 black;
 }
 
 #background001 {
-    background: black url(/images/background001.jpg) right center no-repeat fixed;
-    background-size: cover;
+  background: url(/images/background001.jpg) right center no-repeat fixed;
 }
 
 #background002 {
-    background: black url('/images/background002.jpg') left center no-repeat fixed;
-    background-size: cover;
+  background: url(/images/background002.jpg) left center no-repeat fixed;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
-    text-decoration: underline;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
